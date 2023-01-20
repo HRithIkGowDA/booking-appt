@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>TALK WITH SHARPENER</title>
+    <script>
+        window.onscroll = function () { scrollFunction() };
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("nav").style.backgroundColor = "rgba(0,0,0,0.4)";
+            } else {
+                document.getElementById("nav").style.backgroundColor = "transparent";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <nav id="nav">
+        <a href="/" class="logo">
+            <img id="img" src="/sharp.jfif">
+            <h1 style= "text-align: center;" >TALK WITH SHARPENER</h1>
+        </a>
+        <div class="right-nav">
+            <a  href="https://www.sharpener.tech/" target="_blank" class="home">HOME-PAGE</a>
+        </div>
+    </nav>
+    <div class="form-holder">
+        <form>
+            <div class="header">
+                <div class="bac-holder">
+                    <p class="bac">BOOK A SLOT</p>
+                </div>
+                <p> A REPRESENTATIVE FROM SHARPENER TECH WILL REACH OUT TO YOU :) </p>
+                <hr>
+            </div>
+            <div class="form-input">
+                <label id="name">NAME:</label>
+                <input for="name" type="name" required><br>
+            </div>
+            <div class="form-input">
+                <label id="email">EMAIL:</label>
+                <input for="email" type="email" required><br>
+            </div>
+            <div class="form-input">
+                <label id="phone">PHONE:</label>
+                <input for="phone" type="number" required><br>
+            </div>
+            <div class="form-input">
+                <label id="date">CHOOSE A TIME SLOT:</label>
+                <div style="display:flex;width:100%;">
+                    <input for="date" type="date" style="width:50%;" required>
+                    <input type="time" style="width:50%;" required>
+                </div>
+            </div>
+            <button type="submit">CONFIRM</button>
+        </form>
+    </div>
+    <div id="Users" style="max-width:1400px; margin:15px;">
+        
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.3/axios.min.js"></script>
+    <script src="/index.js"></script>
+</body>
+</html>
